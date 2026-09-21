@@ -20,7 +20,7 @@ TRIAGE_LATENCY = Histogram("ai_triage_duration_seconds", "Triage duration in sec
 LABEL_KEYWORDS = {
     "incident": {"error", "outage", "down", "failed", "failure", "broken", "crash", "bug"},
     "access": {"login", "password", "access", "permission", "unlock", "sign in", "signin"},
-    "billing": {"invoice", "charge", "refund", "billing", "payment", "subscription"},
+    "billing": {"invoice", "charge", "refund", "billing", "payment", "subscription", "renewal"},
     "maintenance": {"upgrade", "patch", "maintenance", "deploy", "deployment", "scheduled"},
 }
 

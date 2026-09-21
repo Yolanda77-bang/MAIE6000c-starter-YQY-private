@@ -17,3 +17,12 @@ def test_triage_general_case():
         "Need clarification about the process for next week.",
     )
     assert result.label == "general"
+
+
+def test_triage_billing_renewal_case():
+    result = triage_text(
+        "Plan renewal problem",
+        "The annual renewal was declined.",
+    )
+    assert result.label == "billing"
+    assert result.confidence >= 0.55
